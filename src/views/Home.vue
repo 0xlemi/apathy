@@ -1,18 +1,21 @@
 <template>
   <div class="home">
-    <photo image="item1.jpg" title="image1"/>
+    <div class="flex justify-center py-6">
+      <h1 class="text-3xl text-blue-900">Carousel</h1>
+    </div>
+    <div class="flex justify-center py-6 mt-5">
+      <carousel/>
+    </div>
   </div>
 </template>
 
 <script>
 import Carousel from '@/components/elements/Carousel.vue'
-import Photo from '@/components/elements/Photo.vue'
 
 export default {
   name: 'Home',
   components: {
-    Carousel,
-    Photo
+    Carousel
   }
 }
 </script>

@@ -1,9 +1,9 @@
 <template>
   <div>
-    <button @click="open = true" class="focus:outline-none rounded-lg bg-gray-500 border-4 border-blue-800 block">
-      <img class="w-40" :src="resolve_img_url(image)" >
+    <button @click="openModal" :class="classValue" class="focus:outline-none block">
+      <img class="border-blue-800 border-4 rounded-lg":src="resolve_img_url(image)" >
     </button>
-    <console-modal :open="open" :title="title" @close="open = false">
+    <console-modal :class="open ? '' : 'hidden'" :open="open" :title="title" @close="open = false">
       <img class="" :src="resolve_img_url(image)" >
     </console-modal>
   </div>
@@ -14,8 +14,10 @@ import ConsoleModal from './ConsoleModal.vue'
 
 export default {
   props: {
+    classValue: String,
     image: String,
-    title: String
+    title: String,
+    clickable: Boolean
   },
   components:{
     ConsoleModal
@@ -24,6 +26,11 @@ export default {
     resolve_img_url: function (path) {
       let images = require.context('../../assets/images/', false, /\.png$|\.jpg$/)
       return images("./"+path)
+    },
+    openModal: function () {
+      if (this.clickable) {
+        this.open = true;
+      }
     }
   },
   data() {
