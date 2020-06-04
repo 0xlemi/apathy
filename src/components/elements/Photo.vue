@@ -1,9 +1,9 @@
 <template>
   <div>
-    <button @click="openModal" :class="classValue" class="focus:outline-none block">
+    <button :class="classValue" class="focus:outline-none block">
       <img class="border-blue-800 border-4 rounded-lg":src="resolve_img_url(image)" >
     </button>
-    <console-modal :class="open ? '' : 'hidden'" :open="open" :title="title" @close="open = false">
+    <console-modal :class="open ? '' : 'hidden'" :open="open" :title="title" @close="closeModal">
       <img class="" :src="resolve_img_url(image)" >
     </console-modal>
   </div>
@@ -17,6 +17,7 @@ export default {
     classValue: String,
     image: String,
     title: String,
+    open: Boolean,
     clickable: Boolean
   },
   components:{
@@ -27,15 +28,13 @@ export default {
       let images = require.context('../../assets/images/', false, /\.png$|\.jpg$/)
       return images("./"+path)
     },
-    openModal: function () {
-      if (this.clickable) {
-        this.open = true;
-      }
-    }
-  },
-  data() {
-    return {
-      open: false
+    // openModal: function () {
+    //   if (this.clickable) {
+    //     this.open = true;
+    //   }
+    // },
+    closeModal: function () {
+      this.$emit('closeModal');
     }
   }
 }
