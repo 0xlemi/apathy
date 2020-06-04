@@ -1,11 +1,34 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> -->
+  <div class="bg-gray-200" id="app">
+    <div class="flex flex-col justify-between max-w-5xl mx-auto" id="app">
+
+      <div id="nav">
+        <nav-bar></nav-bar>
+      </div>
+
+      <div class="mb-auto bg-white">
+        <router-view/>
+      </div>
+
+      <div id="footer">
+        <v-footer></v-footer>
+      </div>
+
     </div>
-    <router-view/>
   </div>
 </template>
+
+<script>
+import NavBar from '@/components/layouts/NavBar.vue';
+import VFooter from '@/components/layouts/Footer.vue';
+
+export default {
+  components: {
+    NavBar,
+    VFooter
+  }
+}
+
+</script>
 
 <style src="./assets/styles/tailwind.css"></style>
