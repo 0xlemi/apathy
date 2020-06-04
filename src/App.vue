@@ -6,7 +6,7 @@
         <nav-bar></nav-bar>
       </div>
 
-      <div class="mb-auto bg-white">
+      <div class="mb-auto bg-blue-100">
         <router-view/>
       </div>
 
