@@ -14,7 +14,7 @@
       <!-- Desktop Menu -->
       <div class="hidden lg:block flex justify-end items-end w-auto">
           <div class="flex mr-6">
-              <router-link to="/new" class="bg-gray-600 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
+              <router-link to="/new" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded">
                   NEW
               </router-link>
           </div>
