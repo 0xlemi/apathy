@@ -9,21 +9,21 @@
       </button>
   </div>
   <div class="flex -mr-6 mt-5" @click="moveLeft(2, true)">
-    <photo v-on:closeModal="closeModal" :image="images[0].url" title="" class="w-32" />
+    <photo v-on:closeModal="closeModal" :description="images[0].description" :image="images[0].url" :title="images[0].name" class="w-32" />
   </div>
   <div class="flex w-40 -mr-6 z-10" @click="moveLeft(1, true)">
-    <photo v-on:closeModal="closeModal" :image="images[1].url" title="" />
+    <photo v-on:closeModal="closeModal" :description="images[1].description" :image="images[1].url" :title="images[1].name" />
   </div>
   <div class="flex w-48 z-20 -mt-5">
     <div class="shadow-xl" @click="open = true" >
-      <photo v-on:closeModal="closeModal" :open="open" :image="images[2].url" :title="images[2].name" />
+      <photo v-on:closeModal="closeModal" :open="open" :description="images[2].description" :image="images[2].url" :title="images[2].name" />
     </div>
   </div>
   <div class="flex w-40 -ml-6 z-10" @click="moveRight(1, true)">
-    <photo v-on:closeModal="closeModal" :image="images[3].url" title="" />
+    <photo v-on:closeModal="closeModal" :description="images[3].description" :image="images[3].url" :title="images[3].name" />
   </div>
   <div class="flex -ml-6 mt-5" @click="moveRight(2, true)">
-    <photo v-on:closeModal="closeModal" :image="images[4].url" title="" class="w-32" />
+    <photo v-on:closeModal="closeModal" :description="images[4].description" :image="images[4].url" :title="images[4].name" class="w-32" />
   </div>
   <div class="flex -ml-4 z-20">
     <button @click="moveRight(1, false)" class="shadow-md h-10 w-10 mt-24 bg-blue-700 focus:outline-none hover:bg-blue-700 rounded">
@@ -74,23 +74,28 @@ export default {
       images: [
         {
           url: 'item1.jpg',
-          name: 'Granadas'
+          name: 'Granadas',
+          description: 'This is an example description for Granadas'
         },
         {
           url: 'item2.jpg',
-          name: 'Pera'
+          name: 'Pera',
+          description: 'This is an example description for Pera'
         },
         {
           url: 'item3.jpg',
-          name: 'Papaya'
+          name: 'Papaya',
+          description: 'This is an example description for Papaya'
         },
         {
           url: 'item4.jpg',
-          name: 'Manzana'
+          name: 'Manzana',
+          description: 'This is an example description for Manzana'
         },
         {
           url: 'item5.jpg',
-          name: 'Sandia'
+          name: 'Sandia',
+          description: 'This is an example description for Sandia'
         }
       ],
       open: false
