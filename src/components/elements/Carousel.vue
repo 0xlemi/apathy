@@ -9,21 +9,21 @@
       </button>
   </div>
   <div class="flex -mr-6 mt-5" @click="moveLeft(2, true)">
-    <photo v-on:closeModal="closeModal" :description="images[0].description" :image="images[0].url" :title="images[0].name" class="w-32" />
+    <photo v-on:closeModal="closeModal" :description="images[0].description" :image="images[0].url" text-size="text-xs pt-3" :title="images[0].name" class="w-32" />
   </div>
   <div class="flex w-40 -mr-6 z-10" @click="moveLeft(1, true)">
-    <photo v-on:closeModal="closeModal" :description="images[1].description" :image="images[1].url" :title="images[1].name" />
+    <photo v-on:closeModal="closeModal" :description="images[1].description" :image="images[1].url" text-size="text-sm pt-4" :title="images[1].name" />
   </div>
   <div class="flex w-48 z-20 -mt-5">
     <div class="shadow-xl" @click="open = true" >
-      <photo v-on:closeModal="closeModal" :open="open" :description="images[2].description" :image="images[2].url" :title="images[2].name" />
+      <photo v-on:closeModal="closeModal" :open="open" :description="images[2].description" :image="images[2].url" text-size="pt-6" :title="images[2].name" />
     </div>
   </div>
   <div class="flex w-40 -ml-6 z-10" @click="moveRight(1, true)">
-    <photo v-on:closeModal="closeModal" :description="images[3].description" :image="images[3].url" :title="images[3].name" />
+    <photo v-on:closeModal="closeModal" :description="images[3].description" :image="images[3].url" text-size="text-sm pt-4" :title="images[3].name" />
   </div>
   <div class="flex -ml-6 mt-5" @click="moveRight(2, true)">
-    <photo v-on:closeModal="closeModal" :description="images[4].description" :image="images[4].url" :title="images[4].name" class="w-32" />
+    <photo v-on:closeModal="closeModal" :description="images[4].description" :image="images[4].url" text-size="text-xs pt-3" :title="images[4].name" class="w-32" />
   </div>
   <div class="flex -ml-4 z-20">
     <button @click="moveRight(1, false)" class="shadow-md h-10 w-10 mt-24 bg-blue-700 focus:outline-none hover:bg-blue-700 rounded">

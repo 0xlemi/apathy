@@ -2,8 +2,8 @@
   <div>
     <div class="border-blue-800 border-4 rounded-lg focus:outline-none relative">
         <img class="" :src="resolve_img_url(image)" >
-        <div class="absolute inset-x-0 top-0 bg-black opacity-75 h-full ">
-          <div class="pt-6 px-4 text-white">
+        <div class="absolute inset-x-0 top-0 bg-black opacity-0 hover:opacity-75 h-full ">
+          <div class="px-4 text-white" :class="textSize">
             <p class="font-semibold pb-3">{{ title }}</p>
             <hr/>
             <p class="pt-3">{{ description }}</p>
@@ -22,7 +22,7 @@ import ConsoleModal from './ConsoleModal.vue'
 
 export default {
   props: {
-    classValue: String,
+    textSize: String,
     image: String,
     title: String,
     description: String,
