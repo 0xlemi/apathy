@@ -1,29 +1,27 @@
-# apathy
+<p align="center"><img src="https://vuejs.org/images/logo.png" width="400"></p>
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Apathy Test
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your unit tests
-```
-npm run test:unit
-```
+![Apithy gif](https://raw.githubusercontent.com/lem93/apathy/master/apathy.gif)
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Instalacion
+
+El live demo esta [Aqui](https://apathy-orcin.now.sh/)
+
+Para hecharlo a volar localmente solo hay que correr los comandos
+- `npm install`
+- `npm run serve`
+
+Para correrlo en produccion
+- `npm install`
+- `npm run build`
+
+
+### Caracteristicas
+
+- Instanciado con VueCli
+- Carousel interactivo
+- Usando vue.js y tailwind
