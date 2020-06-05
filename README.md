@@ -4,7 +4,7 @@
 ## Apathy Test
 
 
-![Apithy gif](https://raw.githubusercontent.com/lem93/apathy/master/apathy.gif)
+![Apithy gif](https://raw.githubusercontent.com/lemidev/apathy/master/apathy.gif)
 
 
 ### Instalacion
