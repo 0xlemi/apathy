@@ -1,20 +1,24 @@
 <template>
-  <div class="bg-gray-200" id="app">
-    <div class="flex flex-col justify-between max-w-5xl mx-auto" id="app">
+  <div class="bg-blue-100" id="app">
+    <div class="flex flex-col sm:min-h-screen bg-hero-tiny-checkers-blue-200">
 
-      <div id="nav">
-        <nav-bar></nav-bar>
-      </div>
 
-      <div class="mb-auto bg-blue-100">
-        <router-view/>
-      </div>
+        <div id="nav">
+          <nav-bar></nav-bar>
+        </div>
+
+        <div class="mt-10 mb-24">
+          <router-view/>
+        </div>
+
 
       <div id="footer">
-        <v-footer></v-footer>
+          <v-footer></v-footer>
+        </div>
+
       </div>
 
-    </div>
+
   </div>
 </template>
 

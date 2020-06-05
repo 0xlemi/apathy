@@ -1,9 +1,14 @@
 <template>
 <div>
-  <footer>
+  <footer  class='sm:fixed sm:bottom-0 w-full pin-b'>
     <div class="w-full pin-b block md:flex bg-gray-800 p-8">
 
-      <div class="flex-1 flex md:block text-gray-600 text-left mx-6 mb-8 md:mb-0 justify-center">
+      <div class="hidden flex-1 flex md:block text-gray-600 text-left mx-6 mb-8 md:mb-0 justify-center">
+          <div class="mx-3"><a class="hover:text-gray-500" href="#">	aura.marquez@apithy.com</a></div>
+          <div class="mx-3"><a class="hover:text-gray-500" href="#">Tel. +52 (442) 227 5548 </a></div>
+          <div class="mx-3"><a class="hover:text-gray-500" href="https://www.apithy.com">	www.apithy.com</a></div>
+      </div>
+      <div class="flex-1 md:hidden text-gray-600 text-center mx-6 mb-8 md:mb-0">
           <div class="mx-3"><a class="hover:text-gray-500" href="#">	aura.marquez@apithy.com</a></div>
           <div class="mx-3"><a class="hover:text-gray-500" href="#">Tel. +52 (442) 227 5548 </a></div>
           <div class="mx-3"><a class="hover:text-gray-500" href="https://www.apithy.com">	www.apithy.com</a></div>
